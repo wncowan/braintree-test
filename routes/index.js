@@ -31,15 +31,15 @@ function createResultObject(transaction) {
 
   if (TRANSACTION_SUCCESS_STATUSES.indexOf(status) !== -1) {
     result = {
-      header: 'Sweet Success!',
+      header: 'Success!',
       icon: 'success',
-      message: 'Your test transaction has been successfully processed. See the Braintree API response and try again.',
+      message: 'Your test transaction has been successfully processed.',
     };
   } else {
     result = {
       header: 'Transaction Failed',
       icon: 'fail',
-      message: `Your test transaction has a status of ${status}. See the Braintree API response and try again.`,
+      message: `Your test transaction has a status of ${status}.`,
     };
   }
 
